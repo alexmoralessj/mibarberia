@@ -1,0 +1,249 @@
+/*
+colores:
+#FF9B54
+#DF4006
+*/
+/*Estilo comun para todo el documento*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    background-color: black;
+}
+img{
+    border-radius: 15px;
+}
+/*Esrilos header*/
+header{
+    padding: 60px;
+    text-align: center;
+    background-image: url('../img/herramientas.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header div{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.4);
+    color: aliceblue;
+    font-size: 1.1rem;
+}
+@media (max-width: 800px) {
+    header{
+        background-position: center;
+    }
+}
+/* estilo navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #DF4006;
+    position: sticky;
+    top: 0;
+}
+.navbar a{
+    color: rgb(253, 251, 248);
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: #FF9B54;
+    color: #DF4006;
+}
+@media (max-width:800px) {
+    .navbar{
+        flex-direction: column;
+        position: unset;
+    }
+}
+.navbar a{
+    text-align: center;
+}
+/*parte principal*/
+article {
+    color: rgb(250, 250, 250);
+    text-align: center;
+    margin: 80px;
+    padding: 50px;
+}
+/*parte historia*/
+@media (max-width:800px) {
+.imageone{
+    width: 125%;
+    height: 300px;
+    background-position: center;
+}
+}
+/*la barberia y coleccion */
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    padding: 15px;
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+}
+.barberia img:hover{
+    width: 100px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.coleccion img:hover{
+    cursor: crosshair;
+    width: 100px;
+    opacity: 1;
+    filter: contrast(120%);
+} 
+@media (max-width:800px){
+    .barberia{
+        width: 300px;
+        height: 300px;
+    }
+}
+@media (max-width:800px){
+    .coleccion{
+        width: 300px;
+        height: 300px;
+    }
+}    
+/*parte servicio*/
+article a{
+    color: #000000;
+    border: 3px solid #DF4006;
+    padding: 15px 25px;
+    background-color: #DF4006;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+article .turno:hover{
+    border-radius: 8px;
+    background-color: #FF9B54;
+    color: #ff4400;
+}
+/*parte contacto*/
+article .p3:hover{
+    columns: auto 12em;
+}
+/*parte footer*/
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #ff4400;
+    color: #ffffff;
+}
+/*estilos formulario*/
+.encabezado {
+    color: #ffffff;
+} 
+form{
+    padding: 10px;
+    background-color: #000000;
+    text-align: center;
+}
+label{
+    background-color: #DF4006;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+}
+fieldset{
+    display: grid;
+    grid-template-columns: 40vw 30vw;
+    gap: 15px;
+    margin: auto;
+    width: fit-content;
+    font-size: 1.2res;
+    border: 5px dotted #e02504;
+}
+@media (max-width:800px){
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+}
+legend{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.carousel-item img {
+    width: 400px;
+    height: 515px;
+}
+@media (max-width:800px) {
+    .carousel-item img {
+        object-fit: contain;
+        height: 500px;
+    }
+    .carousel-inner {
+        object-fit: contain;
+    }
+}
+/*parte principal, colecciones html*/
+main {
+    text-align: center;
+    padding: 15px;
+    }
+.prin{
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+.coleccion1 {
+    flex-basis: 40%;
+    background-color: #1e1e24;
+}
+.coleccion2 {
+    flex-basis: 60%;
+    background-color: #0e0d0d;
+}
+/*parte aside*/
+aside{
+    text-align: center;
+    padding: 15px;
+}
+@media (max-width:900px){
+    .prin{
+        flex-direction: column;
+    }
+}
+aside a{
+    border: 3px solid #DF4006;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #DF4006;
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+aside .turno:hover{
+    border-radius: 8px;
+    color: #000000;
+    background-color: #ff976e;
+}
+aside img {
+    padding: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+@media (max-width:800px){
+    iframe{
+        height: 300px;
+        width: 110%;
+    }
+}
